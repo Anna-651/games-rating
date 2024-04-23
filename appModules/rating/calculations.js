@@ -5,7 +5,7 @@ function createRating(obj, weight){
     );
 }
 function updateRating(array, id, rating) {
-    const index = array.findTndex((item) => item.id ===id);
+    const index = array.findIndex((item) => item.id === id);
     array[index].rating += rating;
     return array;
 }
